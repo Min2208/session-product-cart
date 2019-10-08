@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/" method="get">
+    <legand>Payment Product</legand>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" th:value="${payment.name}"></td>
+        </tr>
+        <tr>
+            <td>Model</td>
+            <td><input type="text" th:value="${payment.model}"></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="text" th:value="${payment.price}"></td>
+        </tr>
+        <tr>
+            <td>Count</td>
+            <td><input type="text" th:value="${payment.count}"></td>
+        </tr>
+        <tr>
+            <td>Total Payment</td>
+            <td><input type="text" th:value="${payment.total}"></td>
+        </tr>
+        <tr><td><input type="submit" value="Payment"></td></tr>
+    </table>
+
+</form>
+</body>
+</html>
