@@ -6,22 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 public class Cart {
-    private static Map<Long,Product> productMap;
-    static {
-        productMap=new HashMap<>();
-
-
-
-    }
-
-    List<Product> productCart=new ArrayList<>();
+    private Map<Long,Product> productMap= new HashMap<>();
 
     public List<Product> getProductCart() {
         return new ArrayList<>(productMap.values());
-    }
-
-    public void setProductCart(List<Product> productCart) {
-        this.productCart = productCart;
     }
 
     public void addCart(Product product) {

@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/" method="get">
+<form th:action="@{/payment/{id}(id=${payment.getId()})}" method="post">
     <legand>Payment Product</legand>
     <table>
         <tr>

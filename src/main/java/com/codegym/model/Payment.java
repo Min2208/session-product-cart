@@ -6,6 +6,7 @@ public class Payment {
     private float count;
     private float total;
     private String model;
+    private long id;
 
     public String getName() {
         return name;
@@ -47,11 +48,20 @@ public class Payment {
         this.model = model;
     }
 
-    public Payment(String name, String price, String count, String model){
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public Payment(long id, String name, String price, String count, String model){
         this.name=name;
         this.count=Float.parseFloat(count);
         this.price=Float.parseFloat(price);
         this.total=this.count*this.price;
         this.model=model;
+        this.id=id;
     }
 }
